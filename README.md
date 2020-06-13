@@ -15,25 +15,21 @@ Build Restful CRUD API for a simple User-Creation application using Spring Boot,
 **1. Clone the application**
 
 ```bash
-git clone https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
+git clone https://github.com/Ravishankarcode/spring-boot-mongoDB-CURD-jpa-rest-api.git
 ```
 
-**2. Use MongoDB database**
+**2. Run MongoDB database**
 ```bash
-use test
+>mongod
+>mongo
+>use test
 ```
 
-**3. Change mysql username and password as per your installation**
-
-+ open `src/main/resources/application.properties`
-
-+ change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
-
-**4. Build and run the app using maven**
+**3. Build and run the app using maven**
 
 ```bash
 mvn package
-java -jar target/easy-notes-1.0.0.jar
+java -jar target/mongo-0.0.1-SNAPSHOT.jar
 ```
 
 Alternatively, you can run the app without packaging it using -
