@@ -1,14 +1,14 @@
-# Spring Boot, MySQL, JPA, Hibernate Rest API Tutorial
+# Spring Boot, MongoDB, JPA, Hibernate Rest API Tutorial
 
-Build Restful CRUD API for a simple Note-Taking application using Spring Boot, Mysql, JPA and Hibernate.
+Build Restful CRUD API for a simple User-Creation application using Spring Boot, MongoDB, JPA and Hibernate.
 
 ## Requirements
 
-1. Java - 1.8.x
+1. Java    - 1.8.x
 
-2. Maven - 3.x.x
+2. Maven   - 3.x.x
 
-3. Mysql - 5.x.x
+3. MongoDB - 4.2.x
 
 ## Steps to Setup
 
@@ -18,9 +18,9 @@ Build Restful CRUD API for a simple Note-Taking application using Spring Boot, M
 git clone https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
 ```
 
-**2. Create Mysql database**
+**2. Use MongoDB database**
 ```bash
-create database notes_app
+use test
 ```
 
 **3. Change mysql username and password as per your installation**
@@ -48,15 +48,15 @@ The app will start running at <http://localhost:8080>.
 
 The app defines following CRUD APIs.
 
-    GET /api/notes
+    GET /api/users
     
-    POST /api/notes
+    POST /api/users
     
-    GET /api/notes/{noteId}
+    GET /api/users/{firstname}
     
-    PUT /api/notes/{noteId}
+    PUT /api/users/{firstname}
     
-    DELETE /api/notes/{noteId}
+    DELETE /api/users/{firstname}
 
 You can test them using postman or any other rest client.
 
